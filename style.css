@@ -588,8 +588,25 @@ body {
 .insta-item img {
   cursor: zoom-in;
 }
+.insta-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.insta-item img {
+  transition: transform 0.3s ease;
+}
+
+.insta-item:hover img {
+  transform: scale(1.05);
+}
+
+.insta-item:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 
